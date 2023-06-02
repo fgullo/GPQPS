@@ -2,7 +2,7 @@
 
 This is a companion code repository for the paper: 
 
-Aris Anagnostopoulos, Valentina Arrigoni, Francesco Gullo, Giorgia Salvatori, Lorenzo Severini, "[*General-purpose Query Processing on Summary Graphs*](pdf/GPQPS_extended.pdf)", submitted to PVLDB
+Aris Anagnostopoulos, Valentina Arrigoni, Francesco Gullo, Giorgia Salvatori, Lorenzo Severini, "[*General-purpose Query Processing on Summary Graphs*](pdf/GPQPS_extended.pdf)"
 
 
 ## License
