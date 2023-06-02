@@ -42,12 +42,12 @@ For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
       + `Facebook` dataset, #supernodes: 708, #superedges: 664 -> `T=300`, `eps=0.54`
       + `Facebook` dataset, #supernodes: 977, #superedges: 2157 -> `T=100`, `eps=0.72`
       + `Facebook` dataset, #supernodes: 1168, #superedges: 4448 -> `T=80`, `eps=0.18`
-      + `Enron` dataset, #supernodes: 22832, #superedges: 10160 -> `T=300`, `eps=0.9`      	
-      + `Enron` dataset, #supernodes: 23957, #superedges: 28825 -> `T=100`, `eps=0.9`
-      + `Enron` dataset, #supernodes: 24371, #superedges: 44086 -> `T=80`, `eps=0.18`
       + `LastFM` dataset, #supernodes: 3375, #superedges: 1217 -> `T=300`, `eps=0.72`
       + `LastFM` dataset, #supernodes: 3568, #superedges: 1550 -> `T=200`, `eps=0.36`     		
-      + `LastFM` dataset, #supernodes: 3821, #superedges: 1997 -> `T=80`, `eps=0.54` 	
+      + `LastFM` dataset, #supernodes: 3821, #superedges: 1997 -> `T=80`, `eps=0.54` 
+      + `Enron` dataset, #supernodes: 22832, #superedges: 10160 -> `T=300`, `eps=0.9`      	
+      + `Enron` dataset, #supernodes: 23957, #superedges: 28825 -> `T=100`, `eps=0.9`
+      + `Enron` dataset, #supernodes: 24371, #superedges: 44086 -> `T=80`, `eps=0.18`	
 
 ### Query processing
 
