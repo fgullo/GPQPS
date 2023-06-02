@@ -39,7 +39,9 @@ For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
    - We use the (unofficial) implementation available [here](https://github.com/MahdiHajiabadi/GSCIS_TBUDS)
    - SWeG summaries are loaded with the `load-sweg-summary` function in [`BatchQueryProcessing.ipynb`](nb/BatchQueryProcessing.ipynb.ipynb)
    - Parameters used to generate SWeG summaries of the experiments in the [paper](pdf/GPQPS_extended.pdf) (`T`: number of iterations; `eps`: error bound):
-      + #supernodes: 708, #superedges: 664 -> `T=300`, `eps=0.54`
+      + `Facebook` dataset, #supernodes: 708, #superedges: 664 -> `T=300`, `eps=0.54`
+      + `Facebook` dataset, #supernodes: 977, #superedges: 2157 -> `T=100`, `eps=0.72`
+      + `Facebook` dataset, #supernodes: 1168, #superedges: 4448 -> `T=80`, `eps=0.18`
 
 ### Query processing
 
