@@ -38,8 +38,8 @@ For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
 * [SWeG](https://doi.org/10.1145/3308558.3313402):
    - We use the (unofficial) implementation available [here](https://github.com/MahdiHajiabadi/GSCIS_TBUDS)
    - SWeG summaries are loaded with the `load-sweg-summary` function in [`BatchQueryProcessing.ipynb`](nb/BatchQueryProcessing.ipynb.ipynb)
-   - Parameters used to generate SWeG summaries of the experiments in the [paper](pdf/GPQPS_extended.pdf):
-      + 
+   - Parameters used to generate SWeG summaries of the experiments in the [paper](pdf/GPQPS_extended.pdf) (`T`: number of iterations; `eps`: error bound):
+      + #supernodes: 708, #superedges: 664 -> `T=300`, `eps=0.54`
 
 ### Query processing
 
@@ -47,4 +47,4 @@ For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
 
 ### Other custom implementations of well-known algorithms
 * [Batagelj and Zaversnik’s core decomposition algorithm](https://doi.org/10.1007/s11634-010-0079-y): [`mykcore.py`](src/mykcore.py)
-* [Topchy et al.'s clustering aggregation algorithm](https://doi.org/10.1109/ICDM.2003.1250937): `partition_aggregation` function in [`summary_utils.py`](src/summary_utils.py)
+* [Topchy et al.'s clustering aggregation algorithm](https://doi.org/10.1109/ICDM.2003.1250937): `partition_aggregation` function in [`summary_utils.py](src/summary_utils.py)
