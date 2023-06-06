@@ -52,7 +52,7 @@ For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
 ### Query processing
 
 * Process and evaluate queries with the GPQPS methods described in the [paper](pdf/GPQPS_extended.pdf) (i.e., `Naive-GPQPS` and `Probabilistic-GPQPS`): [`BatchQueryProcessing.ipynb`](nb/BatchQueryProcessing.ipynb.ipynb) notebook
-* Clustering coefficient, PageRank, closeness, community detection, and modularity are computed by the corresponding functions in `NetworkX`; all parameters of those functions are set to their default values
+* Clustering coefficient, PageRank, closeness, community detection, and modularity are computed by the corresponding functions in `NetworkX`; all parameters of those functions are set to their default values; for directed/weighted graphs, the corresponding `NetworkX` functions operating on directed/weighted graphs are used
 
 ### Other custom implementations of well-known algorithms
 * [Batagelj and Zaversnik’s core decomposition algorithm](https://doi.org/10.1007/s11634-010-0079-y): [`mykcore.py`](src/mykcore.py)
