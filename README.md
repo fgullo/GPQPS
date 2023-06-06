@@ -13,13 +13,13 @@ Everything in this repository is distributed under the Apache License, version 2
 For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
 
 ## Requirements
-* `Python v3.8+`
-* `Jupyter Notebook v6.0+`
-* [`NetworkX`](https://networkx.org/)`v3.1
-* [`SciPy`](https://scipy.org/)`v1.10`
-* [`NumPy`](https://numpy.org/)`v1.24`
-* [`scikit-learn`](https://scikit-learn.org/stable/)`v1.2` 
-* [`pandas`](https://pandas.pydata.org/)`v2.0`
+* `Python v3.9.2+`
+* `Jupyter Notebook v6.0.1+`
+* [`NetworkX`](https://networkx.org/)`v3.1`
+* [`SciPy`](https://scipy.org/)`v1.10.1`
+* [`NumPy`](https://numpy.org/)`v1.20.3`
+* [`scikit-learn`](https://scikit-learn.org/stable/)`v0.24.2` 
+* [`pandas`](https://pandas.pydata.org/)`v1.2.4`
 
 
 ## Usage
@@ -37,7 +37,7 @@ For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
 
 * [SWeG](https://doi.org/10.1145/3308558.3313402):
    - We use the (unofficial) implementation available [here](https://github.com/MahdiHajiabadi/GSCIS_TBUDS)
-   - SWeG summaries are loaded with the `load-sweg-summary` function in [`BatchQueryProcessing.ipynb`](nb/BatchQueryProcessing.ipynb.ipynb)
+   - SWeG summaries are loaded with the `load_sweg_summary` function in [`BatchQueryProcessing.ipynb`](nb/BatchQueryProcessing.ipynb.ipynb)
    - Parameters used to generate SWeG summaries of the experiments in the [paper](pdf/GPQPS_extended.pdf) (`T`: number of iterations; `eps`: error bound):
       + `Facebook` dataset, #supernodes: 708, #superedges: 664 -> `T=300`, `eps=0.54`
       + `Facebook` dataset, #supernodes: 977, #superedges: 2157 -> `T=100`, `eps=0.72`
@@ -52,6 +52,7 @@ For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
 ### Query processing
 
 * Process and evaluate queries with the GPQPS methods described in the [paper](pdf/GPQPS_extended.pdf) (i.e., `Naive-GPQPS` and `Probabilistic-GPQPS`): [`BatchQueryProcessing.ipynb`](nb/BatchQueryProcessing.ipynb.ipynb) notebook
+* Clustering coefficient, PageRank, closeness, community detection, and modularity are computed by the corresponding functions in `NetworkX`; all parameters of those functions are set to their default values
 
 ### Other custom implementations of well-known algorithms
 * [Batagelj and Zaversnik’s core decomposition algorithm](https://doi.org/10.1007/s11634-010-0079-y): [`mykcore.py`](src/mykcore.py)
