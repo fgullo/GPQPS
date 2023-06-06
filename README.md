@@ -56,4 +56,4 @@ For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
 
 ### Other custom implementations of well-known algorithms
 * [Batagelj and Zaversnik’s core decomposition algorithm](https://doi.org/10.1007/s11634-010-0079-y): [`mykcore.py`](src/mykcore.py)
-* [Topchy et al.'s clustering aggregation algorithm](https://doi.org/10.1109/ICDM.2003.1250937): `partition_aggregation` function in [`summary_utils.py](src/summary_utils.py)
+* [Topchy et al.'s clustering aggregation algorithm](https://doi.org/10.1109/ICDM.2003.1250937): `partition_aggregation` function in [`summary_utils.py`](src/summary_utils.py)
