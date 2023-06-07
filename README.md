@@ -12,6 +12,7 @@ Everything in this repository is distributed under the Apache License, version 2
 ## Contacts
 For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
 
+
 ## Requirements
 * `Python v3.9.2+`
 * `Jupyter Notebook v6.0.1+`
@@ -40,18 +41,21 @@ For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
    - SWeG summaries are loaded with the `load_sweg_summary` function in [`BatchQueryProcessing.ipynb`](nb/BatchQueryProcessing.ipynb.ipynb)
    - Parameters used to generate SWeG summaries of the experiments in the [paper](pdf/GPQPS_extended.pdf) (`T`: number of iterations; `eps`: error bound):
       + `Facebook` dataset, #supernodes: 708, #superedges: 664 -> `T=300`, `eps=0.54`
-      + `Facebook` dataset, #supernodes: 977, #superedges: 2157 -> `T=100`, `eps=0.72`
-      + `Facebook` dataset, #supernodes: 1168, #superedges: 4448 -> `T=80`, `eps=0.18`
-      + `LastFM` dataset, #supernodes: 3375, #superedges: 1217 -> `T=300`, `eps=0.72`
-      + `LastFM` dataset, #supernodes: 3568, #superedges: 1550 -> `T=200`, `eps=0.36`     		
-      + `LastFM` dataset, #supernodes: 3821, #superedges: 1997 -> `T=80`, `eps=0.54` 
-      + `Enron` dataset, #supernodes: 22832, #superedges: 10160 -> `T=300`, `eps=0.9`      	
-      + `Enron` dataset, #supernodes: 23957, #superedges: 28825 -> `T=100`, `eps=0.9`
-      + `Enron` dataset, #supernodes: 24371, #superedges: 44086 -> `T=80`, `eps=0.18`	
+      + `Facebook` dataset, #supernodes: 977, #superedges: 2,157 -> `T=100`, `eps=0.72`
+      + `Facebook` dataset, #supernodes: 1168, #superedges: 4,448 -> `T=80`, `eps=0.18`
+      + `LastFM` dataset, #supernodes: 3,375, #superedges: 1,217 -> `T=300`, `eps=0.72`
+      + `LastFM` dataset, #supernodes: 3,568, #superedges: 1,550 -> `T=200`, `eps=0.36`     		
+      + `LastFM` dataset, #supernodes: 3,821, #superedges: 1,997 -> `T=80`, `eps=0.54` 
+      + `Enron` dataset, #supernodes: 22,832, #superedges: 10,160 -> `T=300`, `eps=0.9`      	
+      + `Enron` dataset, #supernodes: 23,957, #superedges: 28,825 -> `T=100`, `eps=0.9`
+      + `Enron` dataset, #supernodes: 24,371, #superedges: 44,086 -> `T=80`, `eps=0.18`
+      + `AS-Skitter` dataset, #supernodes: 1,087,434, #superedges: 1,704,954 -> `T=100`, `eps=0.72`       
+      + `AS-Skitter` dataset, #supernodes: 1,087,430, #superedges: 1,857,562 -> `T=100`, `eps=0.18`
+      + `AS-Skitter` dataset, #supernodes: 1,103,931, #superedges: 2,073,416 -> `T=80`, `eps=0.18`
 
 ### Query processing
 
-* Process and evaluate queries with the GPQPS methods described in the [paper](pdf/GPQPS_extended.pdf) (i.e., `Naive-GPQPS` and `Probabilistic-GPQPS`): [`BatchQueryProcessing.ipynb`](nb/BatchQueryProcessing.ipynb.ipynb) notebook
+* Process and evaluate queries with the GPQPS methods described in the [paper](pdf/GPQPS_extended.pdf) (i.e., `Naive-GPQPS` and `Probabilistic-GPQPS`): [`QueryProcessing.ipynb`](nb/QueryProcessing.ipynb.ipynb) notebook
 * Clustering coefficient, PageRank, closeness, community detection, and modularity are computed by the corresponding functions in `NetworkX`; all parameters of those functions are set to their default values; for directed/weighted graphs, the corresponding `NetworkX` functions operating on directed/weighted graphs are used
 
 ### Other custom implementations of well-known algorithms
