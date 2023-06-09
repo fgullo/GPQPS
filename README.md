@@ -13,7 +13,15 @@ Everything in this repository is distributed under the Apache License, version 2
 For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
 
 
-## Requirements
+## Data
+* The smaller datasets and corresponding summaries used in the [paper](pdf/GPQPS_extended.pdf) are available in the [`data`](data) (datasets and [S2L](https://doi.org/10.1007/s10618-016-0468-8) summaries) and [`sweg`](sweg) ([SWeG](https://doi.org/10.1145/3308558.3313402) summaries) folders
+* The larger datasets are publicly available: please see the [paper](pdf/GPQPS_extended.pdf) for details on this
+* Summaries for the larger datasets can be generated as explained below
+
+
+## Usage
+
+### Requirements
 * `Python v3.9`
 * `Jupyter Notebook v6.5.4`
 * [`NetworkX`](https://networkx.org/)`v3.1`
@@ -22,15 +30,6 @@ For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
 * [`scikit-learn`](https://scikit-learn.org/stable/)`v0.24.2` 
 * [`pandas`](https://pandas.pydata.org/)`v1.2.4`
 * [`tqdm`](https://pypi.org/project/tqdm/)`v4.65.0`
-
-
-## Data
-* The smaller datasets and corresponding summaries used in the [paper](pdf/GPQPS_extended.pdf) are available in the [`data`](data) (datasets and `S2L` summaries) and [`sweg`](sweg) (`SWeG` summaries) folders
-* The larger datasets are publicly available: please see the [paper](pdf/GPQPS_extended.pdf) for details on this
-* Summaries for the larger datasets can be generated as explained below
-
-
-## Usage
 
 ### Generating summary graphs
 
