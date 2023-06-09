@@ -14,13 +14,20 @@ For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
 
 
 ## Requirements
-* `Python v3.9.2+`
-* `Jupyter Notebook v6.0.1+`
+* `Python v3.9`
+* `Jupyter Notebook v6.5.4`
 * [`NetworkX`](https://networkx.org/)`v3.1`
 * [`SciPy`](https://scipy.org/)`v1.10.1`
 * [`NumPy`](https://numpy.org/)`v1.20.3`
 * [`scikit-learn`](https://scikit-learn.org/stable/)`v0.24.2` 
 * [`pandas`](https://pandas.pydata.org/)`v1.2.4`
+* [`tqdm`](https://pypi.org/project/tqdm/)`v4.65.0`
+
+
+## Data
+* The smaller datasets and corresponding summaries used in the [paper](pdf/GPQPS_extended.pdf) are available in the [`data`](data) (datasets and `S2L` summaries) and [`sweg`](sweg) (`SWeG` summaries) folders
+* The larger datasets are publicly available: please see the [paper](pdf/GPQPS_extended.pdf) for details on this
+* Summaries for the larger datasets can be generated as explained below
 
 
 ## Usage
@@ -28,17 +35,17 @@ For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
 ### Generating summary graphs
 
 * [S2L](https://doi.org/10.1007/s10618-016-0468-8) custom implementation (used for directed and/or edge-weighted graphs, as well as smaller graphs): 
-	- Available in the [`Dump-summary-S2L.ipynb`](nb/Dump-summary-S2L.ipynb) notebook
+	- Available in the [`Dump-summary-S2L.ipynb`](Dump-summary-S2L.ipynb) notebook
 	- We follow the original description of [S2L](https://doi.org/10.1007/s10618-016-0468-8), without the sketching and approximate distance computation. We performed `k-Means` on the adjacency matrix of the input graph using the classical Lloyd algorithm and `$k$-Means++` inizialization, with `tol=0.0001` and maximum number of iterations equal to `20`
 
 * [S2L](https://doi.org/10.1007/s10618-016-0468-8) official implementation (used for larger graphs):
    - We use the code available [here](https://github.com/rionda/graphsumm)
    - Parameters used: `./summ -k <#OUTPUT_SUPERNODES> -b -t 2 -m 20 -d 1000 <GRAPH_FILE>`
-   - After that, `.pickle` summaries are generated with the [`Dump-summary-S2L_large-graphs.ipynb`](nb/Dump-summary-S2L_large-graphs.ipynb) notebook
+   - After that, `.pickle` summaries are generated with the [`Dump-summary-S2L_large-graphs.ipynb`](Dump-summary-S2L_large-graphs.ipynb) notebook
 
 * [SWeG](https://doi.org/10.1145/3308558.3313402):
    - We use the (unofficial) implementation available [here](https://github.com/MahdiHajiabadi/GSCIS_TBUDS)
-   - SWeG summaries are loaded with the `load_sweg_summary` function in [`BatchQueryProcessing.ipynb`](nb/BatchQueryProcessing.ipynb.ipynb)
+   - SWeG summaries are loaded with the `load_sweg_summary` function in [`Bulk-query-processing.ipynb`](Bulk-query-processing.ipynb)
    - Parameters used to generate SWeG summaries of the experiments in the [paper](pdf/GPQPS_extended.pdf) (`T`: number of iterations; `eps`: error bound):
       + `Facebook` dataset, #supernodes: 708, #superedges: 664 -> `T=300`, `eps=0.54`
       + `Facebook` dataset, #supernodes: 977, #superedges: 2,157 -> `T=100`, `eps=0.72`
@@ -55,7 +62,7 @@ For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
 
 ### Query processing
 
-* Process and evaluate queries with the GPQPS methods described in the [paper](pdf/GPQPS_extended.pdf) (i.e., `Naive-GPQPS` and `Probabilistic-GPQPS`): [`QueryProcessing.ipynb`](nb/QueryProcessing.ipynb.ipynb) notebook
+* Process and evaluate queries with the GPQPS methods described in the [paper](pdf/GPQPS_extended.pdf) (i.e., `Naive-GPQPS` and `Probabilistic-GPQPS`): [`Bulk-query-processing.ipynb`](Bulk-query-processing.ipynb) notebook
 * Clustering coefficient, PageRank, closeness, community detection, and modularity are computed by the corresponding functions in `NetworkX`; all parameters of those functions are set to their default values; for directed/weighted graphs, the corresponding `NetworkX` functions operating on directed/weighted graphs are used
 
 ### Other custom implementations of well-known algorithms
