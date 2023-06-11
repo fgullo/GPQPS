@@ -35,7 +35,7 @@ For any question, please contact [Francesco Gullo](mailto:gullof@acm.org)
 
 * [S2L](https://doi.org/10.1007/s10618-016-0468-8) custom implementation (used for directed and/or edge-weighted graphs, as well as smaller graphs): 
 	- Available in the [`Dump-summary-S2L.ipynb`](Dump-summary-S2L.ipynb) notebook
-	- We follow the original description of [S2L](https://doi.org/10.1007/s10618-016-0468-8), without the sketching and approximate distance computation. We performed `k-Means` on the adjacency matrix of the input graph using the classical Lloyd algorithm and `$k$-Means++` inizialization, with `tol=0.0001` and maximum number of iterations equal to `20`
+	- We follow the original description of [S2L](https://doi.org/10.1007/s10618-016-0468-8), without the sketching and approximate distance computation. We performed `k-Means` on the adjacency matrix of the input graph using the classic Lloyd algorithm and `k-Means++` inizialization, with `tol=0.0001` and maximum number of iterations equal to `20`
 
 * [S2L](https://doi.org/10.1007/s10618-016-0468-8) official implementation (used for larger graphs):
    - We use the code available [here](https://github.com/rionda/graphsumm)
