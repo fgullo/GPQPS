@@ -2,7 +2,7 @@
 
 This is a companion code repository for the paper: 
 
-Aris Anagnostopoulos, Valentina Arrigoni, Francesco Gullo, Giorgia Salvatori, Lorenzo Severini, "General-purpose Query Processing on Summary Graphs", accepted for publication at the Social Network Analysis and Mining journal.
+Aris Anagnostopoulos, Valentina Arrigoni, Francesco Gullo, Giorgia Salvatori, Lorenzo Severini, "General-purpose Query Processing on Summary Graphs", accepted for publication at the Social Network Analysis and Mining journal ([https://doi.org/10.1007/s13278-024-01314-w](https://doi.org/10.1007/s13278-024-01314-w)).
 
 Please add a citation to that paper if you use this repo for your research.
 
